@@ -15,6 +15,7 @@ app.use(express.json({ limit: "50mb" }));
 app.use("/api/v1/post", postRoutes);
 app.use("/api/v1/image", imageRoutes);
 
+//api end point
 app.get("/", async (req, res) => {
   res.send("Hello from Ayush Chauhan");
 });
