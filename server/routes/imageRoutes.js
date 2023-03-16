@@ -12,11 +12,11 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-router.route("/").get((req, res) => {
+router.route("/createpost").get((req, res) => {
   res.send("Hello from DallE");
 });
 
-router.route("/").post(async (req, res) => {
+router.route("/createpost").post(async (req, res) => {
   try {
     const { prompt } = req.body;
 
